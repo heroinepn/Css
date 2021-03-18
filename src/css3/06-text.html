@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本</title>
+    <style>
+        div{
+            word-wrap: break-word;
+        }
+        li{
+            list-style-type: none;
+
+        }
+        @font-face {
+            font-family: Symbol;
+            src: url("../font/Symbol.ttf");
+
+        }
+        .font{
+
+            font-family: Symbol;
+        }
+    </style>
+</head>
+<body>
+<div>
+<ul>
+    <li>white-space:nowrap 文本换行</li>
+    <li>text-overflow:clip 文本溢出修剪</li>
+</ul>
+    <p>word-wrap:break-world 文本强制换行</p>
+    <p>word-break:break-all 允许在单词内换行</p>
+</div>
+<p class="font">在新的 @font-face 规则中，您必须首先定义字体的名称（比如 myFirstFont），然后指向该字体文件。</p>
+</body>
+</html>

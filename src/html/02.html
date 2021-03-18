@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面布局</title>
+    <style>
+        .top{
+            padding: 30px;
+            text-align: center;
+            background-color: bisque;
+        }
+        .top1{
+            padding:40px;
+            text-align: center;
+            background-color: #cccccc;
+            margin-top:20px ;
+        }
+        .load{
+            padding:40px;
+            text-align: center;
+            background-color:azure;
+        }
+        .center{
+            display: flex;
+            /*弹性盒子*/
+            justify-content: space-between;
+            height: 200px;
+            text-align: center;
+            font-family:"Times New Roman",Georgia,Serif;
+            /*字体库*/
+            /*line-height: 200px;*/
+            /*margin:auto;*/
+
+        }
+        .center-left{
+            background-color: brown;
+            width: 18%;
+            padding-top: 50px;
+            box-sizing: border-box; /*盒子固定*/
+
+        }
+        .center-c{
+            background-color: red;
+            width: 60%;
+            padding-top: 50px;
+
+        }
+        .center-right{
+            background-color: coral;
+            width: 18%;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="top">
+        <h1>头部区域</h1>
+    </div>
+    <div class="top1">
+        <h2>菜单栏导航区域</h2>
+    </div>
+    <div class="center">
+    <div class="center-left">
+        <h1>左内容</h1>
+    </div>
+    <div class="center-c">
+        <h1>中心</h1>
+    </div>
+        <div class="center-right">
+            <h1>右内容</h1>
+        </div>
+    </div>
+    <div class="load">
+        <h1>
+            底部区域
+        </h1>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景图像</title>
+    <style>
+        body{
+            background-image:url("target/test-classes/qq.png");
+            /*那个问题*/
+            background-repeat: no-repeat;
+        /*水平平铺，不平铺改变方向*/
+            background-position:right top ;
+        /*    简写无逗号隔开有顺序*/
+        /*    background:#cccccc url("qq.png") ;*/
+
+
+        }
+       a:hover {
+        color: coral;
+       }
+    </style>
+</head>
+<body>
+<!--/*文本对齐方式*/-->
+<p style=" text-align:justify">文本适应浏览器</p>
+<!--字体系列样式-->
+<span style="font-family: Georgia">什么字体呢</span>
+<h1 style="font-style: italic">斜体</h1>
+<h2 style="font-style: normal">1em=16px</h2>
+<!--链接自带下划线要删除-->
+<p><a href="#" style=" text-decoration :none " >鼠标移动到链接上，删除下划线两个语法 </a></p>
+
+
+</body>
+</html>

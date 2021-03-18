@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计数器</title>
+    <style>
+        body{
+            counter-reset: number;
+        }
+        h1{
+            counter-reset: subsection;
+        }
+        h1:before{
+            counter-increment: number;
+            /*添加文本递增数量*/
+            content:"hello"counter(number)"." ;
+        }
+
+        h2:after{
+            counter-increment: subsection;
+            content: "这个是"counter(number)"."counter(subsection);
+        }
+    </style>
+</head>
+<body>
+<h1>先创建计数器</h1>
+<h2>counter-resert</h2>
+<h1>设定计数器属性名</h1>
+<h2>输出文本内容和数字</h2>
+<h1>因为h2在h1之后所以</h1>
+<h2>可以在h1属性设置创建计数器</h2>
+<h2>不连续默认为各自h1之后的第一个如1.1,2.1</h2>
+</body>
+</html>

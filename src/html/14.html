@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        [title=run]{
+            color: pink;
+        }
+        /*包含*/
+        [title~=simi]{
+            color: chocolate;
+        }
+    /* 包含指定值属性的元素*/
+        [hello|=cc]{
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+<h1 title="run">hello css3</h1>
+<h2 title= "list simi">hi siri</h2>
+<h3 hello="cc">so</h3>
+<h3 hello="dd">cute</h3>
+</body>
+</html>

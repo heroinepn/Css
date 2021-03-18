@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框</title>
+    <style>
+        div.d1{
+            width: 500px;
+            height: 200px;
+            background-color: #666060;
+            box-shadow: 10px 10px 5px 0px cadetblue;
+            border: 2px solid coral;
+            border-radius: 5px;
+        }
+
+
+        #stretch{
+            border: 15px solid transparent;
+            width: 250px;
+            padding: 10px;
+            text-align: center;
+            border-image:url(../images/xilanhua.png) 70 70 stretch;
+        }
+        #round{
+            border: 15px solid transparent;
+            width: 250px;
+            padding: 10px;
+            text-align: center;
+            border-image: url("../images/qiukui.png") 80 80 round;
+        }
+    </style>
+</head>
+<body>
+<!--box-shadow:-20px 8px 20px 0px coral ;-->
+<!--x轴偏移量，y轴偏移量，阴影模糊半径 阴影扩展半径 阴影颜色 投影方式-->
+<!--x，y值可为负值，blur值越大阴影则不锋利0+  spread正值扩大负值缩小要有blur确定-->
+<div class="d1">
+</div>
+<div id="stretch">图像拉伸填充</div>
+<div id="round">平铺重复</div>
+
+</body>
+</html>

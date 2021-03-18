@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <style>
+        input[type=text],select{
+            width: 100%;
+            padding: 12px 20px;
+            display: block;
+            border: 1px solid bisque;
+            border-radius: 6px;
+            box-sizing: border-box;
+        /*盒子大小固定且内边距和边框在已设定的盒子里面进行绘制*/
+        }
+        input[type=submit]{
+            width: 100%;
+            cursor:pointer;
+            background-color:azure;
+            color: #666060;
+            border: none;
+            border-radius:5px;
+            padding: 10px;
+            margin: 8px 0px;
+            text-align: center;
+
+        }
+        input[type=submit]:hover{
+            background-color: darkmagenta;
+        }
+        div{
+            border-radius: 5px;
+            background-color: whitesmoke;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+<div>
+   <form action="#" >
+       <label for="fname">Your Name</label>
+       <input type="text" id="fname" name="firstname" placeholder="请填写姓">
+       <label for="lastName">LastName</label>
+       <input type="text" id="lastName" name="lastName" placeholder="请填写名">
+       <label for="country">Country</label>
+       <select id="country" name="country" >
+           <option value="cn">中国</option>
+           <option value="usa">美国</option>
+           <option value="english">英国</option>
+       </select>
+<input type="submit" value="提交">
+
+   </form>
+</div>
+</body>
+</html>

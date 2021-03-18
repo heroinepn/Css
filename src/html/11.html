@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单</title>
+    <style>
+         .mouse{
+             position: relative;
+             display: inline-block;
+         }
+         .down{
+             position: absolute;
+             display: none;
+         /* 下拉菜单隐藏*/
+             background-color: #666060;
+             min-width: 160px;
+             box-shadow:-20px 8px 20px 0px coral ;
+             /*x轴偏移量，y轴偏移量，阴影模糊半径 阴影扩展半径 阴影颜色 投影方式*/
+             /*x，y值可为负值，blur值越大阴影则不锋利0+  spread正值扩大负值缩小要有blur确定*/
+             padding: 12px 16px;
+         /*    阴影水平垂直方向*/
+         }
+         .mouse:hover .down{
+             display: block;
+         }
+    </style>
+</head>
+<body>
+<!--鼠标移动到制定元素出现下拉菜单-->
+<p>鼠标移动</p>
+<div class="mouse">
+    <span>鼠标移动到我这</span>
+    <div class="down">
+        <p>下拉菜单</p>
+    </div>
+
+</div>
+</body>
+</html>

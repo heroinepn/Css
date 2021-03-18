@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提示文本</title>
+    <style>
+        .mouse{
+            /*left:  300px;*/
+            /*top: 130px;设置body*/
+            position: relative;
+            display: inline-block;
+        /*下边框样式*/
+            border-bottom:1px dotted black;
+
+        }
+        .mouse-01{
+            /*display: none;*/
+            visibility: hidden;
+            width:120px;
+            background-color: black;
+            color: coral;
+            text-align: center;
+            border-radius: 25px;
+        /*边框添加圆角*/
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            /*设置堆叠属性*/
+        /* 显示在右侧**离开左侧*padding已经上下5px不齐所以往上提/
+            top:-5px;
+            left:106%*/
+        /*显示在左侧离开右侧*/
+        /*    top:-5px;*/
+        /*    right: 100px;*/
+        /* 显示在头部离父底部100%*/
+            bottom: 100%;
+            /*底部离头部100%远 top:100%*/
+            left: 50%;
+            /*由相对居中到绝对居中*/
+            margin-left: -60px;
+        /* 淡入淡出*/
+        /*完全透明 opacity :0 不透明:1*/
+        /*  transition  过渡需要发生的时间*/
+            opacity: 0;
+          transition: opacity 3s;
+        }
+        .mouse:hover .mouse-01{
+            visibility: visible;
+            opacity: 1;
+            /*display: inline-block;*/
+        }
+    /* 箭头文本提示*/
+        .mouse-01:after{
+            content: "";
+            position: absolute;
+            top:100%;
+            left:50%;
+            margin-left:-1px;
+            border-width: 2px;
+            border-style: solid;
+            /*上右下左 顺方向*/
+            border-color:  black  transparent transparent transparent ;
+
+
+        }
+        .mouse-02:after{
+            content: '';
+            display: table;
+        /* 增加间隙换行*/
+        }
+    </style>
+</head>
+<body style="text-align: center">
+<p class="mouse-02"> 凑块元素</p>
+<div class="mouse">
+    鼠标移动这儿
+    <span class="mouse-01">提示文本</span>
+</div>
+</body>
+</html>

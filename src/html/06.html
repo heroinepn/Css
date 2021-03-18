@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素的隐藏</title>
+    <style>
+        p.display{
+            display: none;
+        }
+        .visibility{
+            visibility: hidden;
+        }
+        li{
+            display: inline;
+            /*    块联素变内联素在一行*/
+        /* 内联素只能设置宽   */
+        }
+        .vv span{
+            display: block;
+        /*    内联素变块联素独占一行*/
+
+        }
+        .vv{
+        /*position定位*/
+        /*static 静态默认定位不受top bottom left right影响*/
+            position:fixed;
+            top:70px;
+            left:55px;
+        /*相对浏览器定位*/
+        }
+        /*相对定位元素的定位是相对其正常位置 空间不改变*/
+        .load{
+            position: relative;
+            left:100px;
+        }
+
+        .absolute{
+            position: relative;
+            padding-left: 50px;
+
+        }
+    /*    absolute绝对定位 参考父定位(父定位相对定位）或页面 不占居空间*/
+        div .absolute1{
+            position: absolute;
+            top:100px;
+            right:40px;
+        }
+    </style>
+</head>
+<body>
+<h1>display:none 隐藏消失不占空间，visibility：hidden隐藏占空间</h1>
+<p class="display"> display</p>
+<p class="visibility">visibility</p>
+<div class="vv">
+<span>内联元素作为块元素</span>
+<span> 变为独占一行</span>
+</div>
+<ul>
+    <li>块元素变为内联元素</li>
+    <li>块元素由独占一行</li>
+    <li>变为在一行内联元素</li>
+
+</ul>
+<p class="load">相对定位元素的定位</p>
+<div class="absolute">
+    <p>test</p>
+<p class="absolute1"> 绝对定位</p>
+</div>
+</body>
+</html>

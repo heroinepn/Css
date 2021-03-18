@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类</title>
+    <style>
+    p:first-child{
+        color: lavender;
+    }
+    p>i:first-child{
+        color: rebeccapurple;
+    }
+    p:first-child i{
+        color: coral;
+    }
+    q:lang(no){
+       quotes: "-""`";
+    }
+
+
+    h1:after{
+        content: "add";
+        content:url("../images/qq.png");
+    }
+    /*h1:before{*/
+    /*    content: url("/resources/qq.png");*/
+    /*}*/
+    h1:first-letter{
+        color: red;
+        font-size: xx-large;
+    }
+    h1:first-line{
+        color: cornflowerblue;
+        font-variant: small-caps;
+    }
+    /*组合选择器
+    div p{}
+    div>p{}
+    div~p{}
+    */
+    </style>
+</head>
+<body>
+<!--<p>第一个子元素</p>-->
+<!--<p><i>嵌套第一个子元素</i></p>-->
+<p><i>嵌套的第一个元素的</i><i>所有子元素</i></p>
+<p>伪类lang得到<q lang="no"> </q>q元素的值</p>
+<h1>这是css,aaa伪元素</h1>
+
+</body>
+</html>

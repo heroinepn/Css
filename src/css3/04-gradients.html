@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>渐变</title>
+    <style>
+        #gradients{
+
+            background-image: linear-gradient(bisque ,darksalmon)
+        }
+    </style>
+</head>
+<body>
+<div id="gradients">
+    <h1>线性渐变（Linear Gradients）- 向下/向上/向左/向右/对角方向</h1>
+    <h1>径向渐变（Radial Gradients）- 由它们的中心定义</h1>
+    <p>为了创建一个线性渐变，你必须至少定义两种颜色节点。颜色节点即你想要呈现平稳过渡的颜色。
+        同时，你也可以设置一个起点和一个方向（或一个角度</p>
+    <h1> <p>从上到下，蓝色渐变到红色 </p>
+        linear-gradient(blue, red);
+
+        <p> 渐变轴为45度，从蓝色渐变到红色 </p>
+        linear-gradient(45deg, blue, red);
+
+        <p> 从右下到左上、从蓝色渐变到红色 </p>
+        linear-gradient(to left top, blue, red);
+
+        <p> 从下到上，从蓝色开始渐变、到高度40%位置是绿色渐变开始、最后以红色结束 </p>
+        linear-gradient(0deg, blue, green 40%, red);</h1>
+</div>
+</body>
+</html>

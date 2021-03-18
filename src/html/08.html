@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素水平居中对齐</title>
+    <style>
+        .center{
+            margin:auto;
+            width: 50%;
+            /*必须设置宽度*/
+            padding: 10px;
+        }
+        .absolute{
+            position: absolute;
+            right: 0px;
+            /*clear: both;*/
+        }
+        .float{
+            float: right;
+           width: 300px;
+        }
+        .center2{
+            padding: 70px;
+            /*水平居中*/
+            text-align: center;
+        /*    文字居中*/
+        /*  垂直居中line-height: 300px;  */
+        }
+        .center3{
+            /*height: 200px;*/
+            line-height: 200px;
+            border:30px solid blue;
+            text-align: center;
+        }
+        .center3 p{
+
+            line-height: 1.5;
+            /*display: inline-block;*/
+            /*内联块都可以设置可以多个占一行*/
+            vertical-align: middle;
+        /*    垂直方式：父元素中部*/
+        }
+    </style>
+</head>
+<body>
+<div class="center">
+
+    <p>水平居中块元素不设置width属性不起作用</p>
+</div>
+<p class="absolute">绝对右对齐</p>
+<p class="float">浮动右对齐</p>
+<p class="center2">padding垂直居中</p>
+<p class="center3">多行文字居中,若文本过多内联块可以多个占一行</p>
+</body>
+</html>

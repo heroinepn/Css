@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航栏</title>
+    <style>
+        ul{
+            list-style-type:none;
+            /*去除小圆点*/
+            background-color:whitesmoke;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+        }
+        li a{
+            display: block;
+            color: #666060;
+        /* 去除下划线*/
+            text-decoration: none;
+            padding:8px 16px;
+        }
+        /*li a:hover{*/
+        /*    background: cornflowerblue;*/
+        /*   color: bisque;*/
+        /*}*代码划过
+         */
+        li a.active{
+            background-color: green;
+            color:white ;
+
+        }
+        li a:hover:not(.active){
+            background-color: brown;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a class="active" href="01.html">主页 </a></li>
+    <li><a href="#" >新闻 </a></li>
+    <li><a href="#" >联系 </a></li>
+    <li><a href="#" >关于 </a></li>
+</ul>
+</body>
+</html>
